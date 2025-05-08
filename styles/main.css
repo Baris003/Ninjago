@@ -1,0 +1,85 @@
+/* ========== General Styles ==========*/
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    overscroll-behavior-y: none; /* Prevent iOS pull-to-refresh */
+    -webkit-overflow-scrolling: auto; /* Disable momentum scrolling on iOS */
+    background: linear-gradient(to right, #590000 0%, #920000 50%, #590000 100%);
+}
+
+
+body {
+    /* Viewport Units for Notched Devices  */
+    padding-top: env(safe-area-inset-top);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+
+    /* prevents double-tap zoom, etc. */
+    touch-action: manipulation;
+}
+
+
+
+
+
+
+
+
+
+/* ========== Navigation Bar Styles ==========*/
+nav {
+    width: 98%;
+    background-color: rgba(217, 217, 217, 0.5); 
+    z-index: 999;
+    margin: 10px auto;
+    border-radius: 15px;
+    font-family: "Ninjago";
+    font-size: 24px;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a {
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+nav li:first-child{
+    margin: 10px auto 0 10px;
+}
+
+/* animation on hover */
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    bottom: 10px;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+    bottom: 2px;
+}
+
+nav a:hover::after {
+    width: calc(100% - 60px); 
+} 
