@@ -6,6 +6,7 @@
 }
 
 html, body {
+    font-size: 16px;
     height: 100%;
     overflow-x: hidden;
     overscroll-behavior-y: none; /* Prevent iOS pull-to-refresh */
@@ -34,15 +35,16 @@ body {
 
 
 /* ========== Navigation Bar Styles ==========*/
+
 nav {
     position: fixed;
-    width: 98%;
+    width: 100%;
     background-color: rgba(217, 217, 217, 0.5); 
     z-index: 999;
-    margin: 10px auto;
+    margin: 1rem auto;
     border-radius: 15px;
     font-family: "Ninjago";
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 nav ul {
@@ -57,14 +59,14 @@ nav a {
     height: 100%;
     text-decoration: none;
     color: white;
-    padding: 0 30px;
+    padding: 0 2rem;
     display: flex;
     align-items: center;
     position: relative;
 }
 
 nav li:first-child{
-    margin: 10px auto 0 10px;
+    margin: 1rem auto 0 1rem;
 }
 
 /* animation on hover */
@@ -74,7 +76,6 @@ nav a::after {
     left: 50%;
     transform: translateX(-50%);
     width: 0;
-    bottom: 10px;
     height: 2px;
     background-color: white;
     transition: width 0.3s ease;
@@ -86,7 +87,7 @@ nav a:hover::after {
 } 
 
 
-/* mobile version of navbar */
+/*----- mobile version of navbar -----*/
 #sidebar {
     z-index: 1000;
     position: fixed;
@@ -94,13 +95,13 @@ nav a:hover::after {
     right: 0;
     background-color: rgba(68, 2, 2, 0.7); 
     backdrop-filter: blur(10px);
-    padding: 25px;
+    padding: 1.5rem;
     display: none;
-    gap: 35px;
+    gap: 2.2rem;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 330px;
+    width: 20rem;
     height: 100%;
 }
 
@@ -114,9 +115,95 @@ nav a:hover::after {
 
 
 
+
+
+
+
+
+
+
+/* ========== Main Styles ==========*/
+
+main {
+    margin-top: 33vh;
+}
+
+
+/*----- HeroSection Styles -----*/
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section img {
+    width: 33%;
+    min-width: 25rem;
+}
+
+.hero-section h3 {
+    color: white; 
+    width: 75%;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+#wu_garmadon {
+    width: 90%;
+    height: 40rem;
+    margin: 50vh auto;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+    overflow-y: hidden;
+    
+    position: relative;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+#wu_garmadon img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+#deco {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#deco1 {
+    margin-bottom: 20rem;
+}
+
+
+#deco2 {
+    margin-top: 17rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ========== Media Queries ========== */
 
-/* navbar media queries */
 @media(max-width: 1090px) {
     .hide-on-mobile {
     display: none;
@@ -125,12 +212,12 @@ nav a:hover::after {
 
     #open-sidebar {
         display: block;
-        margin-right: 20px;
+        margin-right: 1.5rem;
     }
 
 
     #sidebar {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     #logo {
@@ -149,3 +236,4 @@ nav a:hover::after {
         position: static;
     }
 }
+
