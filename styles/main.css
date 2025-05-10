@@ -16,6 +16,8 @@
 html, body {
     font-size: 16px;
     height: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
     overflow-x: hidden;
     overscroll-behavior-y: none; /* Prevent iOS pull-to-refresh */
     -webkit-overflow-scrolling: auto; /* Disable momentum scrolling on iOS */
@@ -47,7 +49,8 @@ body {
 nav {
     position: fixed;
     width: 100%;
-    background-color: rgba(217, 217, 217, 0.5); 
+    max-width: 2000px;
+    background-color: rgba(146, 68, 68, 0.95); 
     z-index: 999;
     margin: 1rem auto;
     border-radius: 15px;
@@ -96,7 +99,7 @@ nav a:hover::after {
 
 
 /*----- mobile version of navbar -----*/
-#sidebar {
+.sidebar {
     z-index: 1000;
     position: fixed;
     top: 0; 
@@ -113,7 +116,7 @@ nav a:hover::after {
     height: 100%;
 }
 
-#open-sidebar {
+.open-sidebar {
     display: none;
 }
 
@@ -133,7 +136,7 @@ nav a:hover::after {
 /* ========== Main Styles ==========*/
 
 main {
-    margin-top: 33vh;
+    margin-top: 25vh;
 }
 
 
@@ -145,9 +148,8 @@ main {
     justify-content: center;
 }
 
-.hero-section img {
+.ninjago-home {
     width: 33%;
-    min-width: 25rem;
 }
 
 .hero-section h3 {
@@ -162,13 +164,15 @@ main {
 
 
 
-#wu_garmadon {
+
+
+
+.wu-garmadon-card {
     width: 90%;
     height: 40rem;
     margin: 50vh auto;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 50px;
-    overflow-y: hidden;
     
     position: relative;
     display: flex; 
@@ -176,25 +180,33 @@ main {
     align-items: center; 
 }
 
-#wu_garmadon img {
-    max-width: 100%; 
-    height: auto; 
+
+.wu {
+    margin-right: 6rem;
 }
 
-#deco {
+.garmadon {
+    margin-left: 5rem;
+}
+
+.deco {
     position: absolute;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-#deco1 {
+.deco1 {
     margin-bottom: 20rem;
+    width: 60%;
 }
 
 
-#deco2 {
-    margin-top: 17rem;
+.deco2 {
+    margin-top: 22rem;
+    width: 60%;
+    position: absolute;
+    right: 0;
 }
 
 
@@ -213,36 +225,135 @@ main {
 
 /* ========== Media Queries ========== */
 
-@media(max-width: 1090px) {
+/*responsive navigation bar*/
+@media(max-width: 900px) {
+    
     .hide-on-mobile {
     display: none;
     }
 
-
-    #open-sidebar {
+    .open-sidebar {
         display: block;
         margin-right: 1.5rem;
     }
 
-
-    #sidebar {
+    .sidebar {
         font-size: 1.25rem;
     }
 
-    #logo {
-        transform: scale(0.8);
+    .logo {
+        width: 10rem;
     }
 }
 
 
 
-@media(max-width: 430px) {
-    #sidebar {
-        width: 100%;
+
+/* responsive hero section */
+@media(max-width: 1130px) {
+    .hero-section h3 {
+        font-size: 1.5rem;
     }
 
-    nav {
-        position: static;
+
+    .wu-garmadon-card {
+        margin-top: 33vh;
+        height: 30rem;
+    }
+
+    .deco2 {
+        margin-top: 16rem;
+    }
+
+    .wu {
+        margin-right: 0;
+    }
+
+    .garmadon {
+        margin-left: 0;
+    }
+
+    .wu-garmadon {
+        width: 20rem;
     }
 }
 
+
+@media(max-width: 650px) {
+    .hero-section h3 {
+        font-size: 1.2rem;
+    }
+
+
+    .wu-garmadon {
+        width: 15rem;
+    }
+
+    .wu-garmadon-card {
+        height: 17rem;
+        border-radius: 25px;
+    }
+
+    .deco1 {
+        margin-bottom: 12rem;
+    }
+
+    .deco2 {
+        margin-top: 8rem;
+    }
+}
+
+
+@media(max-width: 485px) {
+
+    .sidebar {width: 100%} /*making sidebar take up the whole screen on mobile*/
+
+
+    .hero-section h3 {
+        font-size: 1rem;
+    }
+
+
+    .wu-garmadon {
+        width: 12rem;
+    }
+
+    .wu-garmadon-card {
+        height: 15rem;
+        border-radius: 25px;
+        margin-top: 10vh;
+    }
+
+    .deco1 {
+        margin-bottom: 12rem;
+    }
+
+    .deco2 {
+        margin-top: 8rem;
+    }
+}
+
+
+@media(max-width: 380px) {
+    .hero-section h3 {
+        font-size: 0.8rem;
+    }
+
+
+    .wu-garmadon {
+        width: 10rem;
+    }
+
+    .wu-garmadon-card {
+        height: 11rem;
+        border-radius: 15px;
+    }
+
+    .deco1 {
+        margin-bottom: 6rem;
+    }
+
+    .deco2 {
+        margin-top: 4rem;
+    }
+}

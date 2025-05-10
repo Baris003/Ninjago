@@ -1,6 +1,6 @@
 // Sidebar buttons
 
-const sidebar = document.getElementById('sidebar');
+const sidebar = document.querySelector('.sidebar'); 
 
 function openSidebar() {
     sidebar.style.display = 'flex';
