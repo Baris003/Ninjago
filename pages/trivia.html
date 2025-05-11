@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ninjago/Games/Trivia</title>
-    <link rel = "stylesheet" href = "/styles/main.css">
-</head>
+    <link rel = "stylesheet" href = "/styles/base.css">
+    <link rel = "stylesheet" href = "/styles/trivia.css"></head>
 
 <body>
     <header>
         <nav>
-            <ul id = "sidebar">
-                <li id = "sidebar-close-btn" onclick = "closeSidebar()"><img src = "/images/close-sidebar.png"></li>
+            <ul class = "sidebar">
+                <li class = "sidebar-close-btn" onclick = "closeSidebar()"><img src = "/images/close-sidebar.png"></li>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "/pages/info.html">Info</a></li>
                 <li><a href = "/pages/games.html">Spiele</a></li>
@@ -19,15 +19,15 @@
             </ul>
 
 
-            <ul id = "desktop-navbar">
+            <ul class = "desktop-navbar">
                 <li>
-                    <img src = "/images/ninjago_logo.png" id = "logo">
+                    <img src = "/images/ninjago_logo.png" class = "logo">
                 </li>
                 <li class = "hide-on-mobile"><a href = "index.html">Home</a></li>
                 <li class = "hide-on-mobile"><a href = "/pages/info.html">Info</a></li>
                 <li class = "hide-on-mobile"><a href = "/pages/games.html">Spiele</a></li>
                 <li class = "hide-on-mobile"><a href = "https://www.lego.com/de-de/themes/ninjago">Shop</a></li>
-                <li id = "open-sidebar" onclick = "openSidebar()"><img src = "/images/open-sidebar.png" ></li>
+                <li class = "open-sidebar" onclick = "openSidebar()"><img src = "/images/open-sidebar.png" ></li>
             </ul>
         </nav>
     </header>
@@ -35,6 +35,6 @@
     Trivia
 
 
-    <script src = "scripts/main.js"></script>
+    <script src = "/scripts/navbar.js"></script>
 </body>
 </html>
