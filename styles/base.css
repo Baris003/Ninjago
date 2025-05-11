@@ -133,4 +133,17 @@ nav a:hover::after {
     .logo {
         width: 10rem;
     }
+
+
+    /*removing hover effects*/
+    @media (pointer: coarse) {
+        a:hover::after,
+        button:hover,
+        nav a:hover::after {
+        content: none;
+        background: none;
+        width: 0;
+        transition: none;
+}
+    }
 }
