@@ -39,8 +39,11 @@
         
         
             <div class = "wu-garmadon-card">
-                <img src = "/images/garmadon.png" class = "wu-garmadon garmadon">
-                <img src = "/images/wu.png" class = "wu-garmadon wu">
+                <img src = "/images/garmadon.png" class = "wu-garmadon garmadon shaking" onclick = "soundEffect('garmadon')">
+                <audio src = "/audio/garmadon_laugh.mp3" id = "garmadon"></audio>
+                <img src = "/images/wu.png" class = "wu-garmadon wu shaking" onclick = "soundEffect('wu')">
+                <audio src = "/audio/wu_quote.mov" id = "wu"></audio>
+
 
                 <img src = "/images/homedeco.png" class = " deco deco1">
                 <img src = "/images/homedeco2.png" class = "deco deco2">      
@@ -50,5 +53,6 @@
     
 
     <script src = "/scripts/navbar.js"></script>
+    <script src = "/scripts/home.js"></script>
 </body>
 </html>

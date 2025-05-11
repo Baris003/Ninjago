@@ -76,9 +76,20 @@ main {
 
 
 
+/*----- Adding shake effect on garmadon and wu -----*/
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(-2deg); }
+    75% { transform: rotate(2deg); }
+    100% { transform: rotate(0deg); }
+}
 
-
-
+.shaking {
+    animation: shake 1.2s infinite linear;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    will-change: transform, box-shadow;
+}
 
 
 
