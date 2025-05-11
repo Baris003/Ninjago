@@ -37,6 +37,7 @@ html, body {
     overscroll-behavior-y: none; /* Prevent iOS pull-to-refresh */
     -webkit-overflow-scrolling: auto; /* Disable momentum scrolling on iOS */
     background: linear-gradient(to right, #590000 0%, #920000 50%, #590000 100%);
+    overflow-y: auto;
 }
 
 
@@ -49,6 +50,7 @@ body {
 
     /* prevents double-tap zoom, etc. */
     touch-action: manipulation;
+    margin-top: 0;
 }
 
 
@@ -156,17 +158,25 @@ nav a:hover::after {
     .logo {
         width: 10rem;
     }
-
-
-    /*removing hover effects*/
-    @media (pointer: coarse) {
-        a:hover::after,
-        button:hover,
-        nav a:hover::after {
-        content: none;
-        background: none;
-        width: 0;
-        transition: none;
 }
+
+@media (max-width: 900px) {
+    nav {
+        margin-top: 0;
     }
 }
+
+
+/*removing hover effects*/
+@media (pointer: coarse) {
+    a:hover::after,
+    button:hover,
+    nav a:hover::after {
+    content: none;
+    background: none;
+    width: 0;
+    transition: none;
+}
+}
+
+
