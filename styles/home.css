@@ -99,6 +99,148 @@ main {
 
 
 
+/* ========== Ninja Info Section ========== */
+
+/* Positioning items */
+.ninja-info-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+}
+
+.jay, .cole {
+    flex-direction: row-reverse;
+}
+
+
+
+/* styling items */
+.poppins-font {
+    font-family: "Poppins"
+}
+
+
+.info-section h3 {
+    font-family: "Ninjago";
+    font-size: 2.5rem;
+    color: white;
+    margin: auto 1rem;
+}
+
+
+.ninja-info-cta {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.ninja-info-cta button {
+    width: 25rem;
+    height: 120px;
+    margin: 5rem 1rem auto 1rem;
+    border: none;
+    border-radius: 2rem;
+    transition: transform 0.3s ease;
+}
+
+
+.ninja-info-cta button a {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins";
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ninja-info-cta button:hover {
+    transform: scale(1.05);
+}
+
+.ninja-info-cta button:active {
+    transform: scale(1);
+}
+
+
+
+
+/*----- section specific styles -----*/
+/* kai */
+.info-section.kai {
+    background-color: #500507;
+}
+
+.info-section.kai button {
+    background-color: #F91E11;
+}
+
+/* jay */
+.info-section.jay {
+    background-color: #1270B0;
+}
+
+.info-section.jay button {
+    background-color: #3EBBFD;
+}
+
+
+
+/* zane */
+.info-section.zane {
+    background-color: #E8E9E7;
+}
+
+.info-section.zane button {
+    background-color: white;
+}
+
+.info-section.zane a, .info-section.zane h3 {
+    color: black;
+}
+
+
+/* cole */
+.info-section.cole {
+    background-color: #1B1D1A;
+}
+
+.info-section.cole button {
+    background-color: #41403F;
+}
+
+
+
+/* lloyd */
+.info-section.lloyd {
+    background-color: #2b5118;
+}
+
+.info-section.lloyd button {
+    background-color: #23a51d;
+}
+
+
+
+
+
+
 /* ========== Media Queries ========== */
 
 /* responsive hero section */
