@@ -436,8 +436,12 @@ main {
         margin: auto;
     }
 
+    .ninja-info-cta h3 {
+        margin-top: 0;
+    }
+
     .ninja-info-cta button {
-        margin-top: -1.5rem;
+        margin-top: -5rem;
     }
 
     .ninja-info-cta.cole h3{
