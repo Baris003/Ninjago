@@ -113,7 +113,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 500px;
+    min-height: 500px;
 }
 
 .jay, .cole {
@@ -126,6 +126,7 @@ main {
 .poppins-font {
     font-family: "Poppins"
 }
+
 
 
 .info-section h3 {
@@ -220,9 +221,13 @@ main {
 .info-section.cole {
     background-color: #1B1D1A;
 }
+.info-section.cole h3{
+    margin-right: -2rem;
+}
 
 .info-section.cole button {
     background-color: #41403F;
+    margin-right: -2rem;
 }
 
 
@@ -243,7 +248,7 @@ main {
 
 /* ========== Media Queries ========== */
 
-/* responsive hero section */
+/*----- responsive hero section -----*/
 @media(max-width: 1130px) {
     .hero-section h3 {
         font-size: 1.5rem;
@@ -300,7 +305,7 @@ main {
 
 @media(max-width: 485px) {
 
-    .sidebar {width: 100%} /*making sidebar take up the whole screen on mobile*/
+    .sidebar {width: 100%} 
 
 
     .hero-section h3 {
@@ -349,5 +354,97 @@ main {
 
     .deco2 {
         margin-top: 4rem;
+    }
+}
+
+
+
+
+/*----- responsive ninja-info section -----*/
+@media(max-width: 1081px) {
+    .ninja-info-cta h3 {
+        font-size: 2.2rem;
+    }
+}
+
+@media(max-width: 1011px) {
+    .ninja-info-cta h3 {
+        font-size: 2rem;
+    }
+
+    .ninja-info-cta button {
+        width: 22rem;
+        height: 100px;
+    }
+}
+
+@media(max-width: 965px) {
+    .ninja-info-cta h3 {
+        font-size: 1.8rem;
+    }   
+}
+
+@media(max-width: 919px) {
+    .info-section img {
+        transform: scale(0.9);
+        transform-origin: center;
+    }
+
+    .ninja-info-cta button {
+        width: 20rem;
+        height: 85px;
+        border-radius: 1.2rem;
+    }
+
+    .ninja-info-cta h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 802px) {
+    .info-section img {
+        transform: scale(0.7);
+        transform-origin: center;
+    }
+
+    .ninja-info-cta button {
+        width: 16rem;
+        height: 75px;
+    }
+
+    .ninja-info-cta button a {
+        font-size: 1.2rem;
+    }
+
+    .ninja-info-cta h3 {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media(max-width: 733px) {
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .ninja-info-cta {
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .ninja-info-cta button {
+        margin-top: -1.5rem;
+    }
+
+    .ninja-info-cta.cole h3{
+        margin: auto;
+    }
+
+    .ninja-info-cta.cole button {
+        margin: -1.5rem auto auto auto;
     }
 }
