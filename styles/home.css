@@ -263,7 +263,7 @@ main {
 .movie h1{
     text-align: center;
     color: white;
-    font-size: 3rem;
+    font-size: clamp(1.8rem, 5vw, 3rem);
     font-family: "Ninjago";
     font-weight: 350;
     letter-spacing: 2px;
@@ -272,6 +272,7 @@ main {
 
 .movie span {
     font-weight: bold;
+    font-size: clamp(1.8rem, 5vw, 3rem);
 }
 
 
@@ -297,7 +298,7 @@ main {
 
 .movie-info p {
     color: #FACF00;
-    font-size: 3rem;
+    font-size: clamp(1.4rem, 4vw, 3rem);
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-weight: 400;
     margin: 1.5rem auto;
