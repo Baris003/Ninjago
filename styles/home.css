@@ -246,6 +246,73 @@ main {
 
 
 
+
+
+
+
+
+/* ========== Movie Section ========== */
+
+.section.movie {
+    width: 100%;
+    height: 100%;
+    margin-top: 50vh;
+}
+
+
+.movie h1{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-family: "Ninjago";
+    font-weight: 350;
+    letter-spacing: 2px;
+    margin: 10vh 0;
+}
+
+.movie span {
+    font-weight: bold;
+}
+
+
+.background.movie-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    background-color: black;
+    width: 100%;
+    height: 50%;
+}
+
+.background.movie-section img {
+    width: 100%;
+    margin-top: -2px;
+}
+
+.movie-info {
+    text-align: center;
+}
+
+.movie-info p {
+    color: #FACF00;
+    font-size: 3rem;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 1.5rem auto;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* ========== Media Queries ========== */
 
 /*----- responsive hero section -----*/
