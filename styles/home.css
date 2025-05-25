@@ -395,6 +395,45 @@ main {
 
 
 
+
+
+
+
+
+
+
+/* ========== Quiz Boxes Section ========== */
+.quiz-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vh;
+}
+
+.box {
+    height: 500px;
+    width: auto;
+    border-radius: 10%;
+}
+
+.box.trivia {
+    background-color: #D8C116;
+}
+
+.box.quiz {
+    background-color: #D81616;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* ========== Media Queries ========== */
 
 /*----- responsive hero section -----*/
