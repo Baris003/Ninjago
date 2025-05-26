@@ -403,29 +403,72 @@ main {
 
 
 /* ========== Quiz Boxes Section ========== */
-.quiz-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100vh;
+
+/* -----General section styling----- */
+.section.quiz-section {
+    margin-top: 20vh;
 }
+
 
 .box {
-    height: 500px;
-    width: auto;
-    border-radius: 10%;
+    height: 350px;
+    width: 40%;
+    border-radius: 50px;
 }
 
-.box.trivia {
-    background-color: #D8C116;
+.quiz-container {
+    display: flex;
+    justify-content: space-evenly;
 }
+
 
 .box.quiz {
     background-color: #D81616;
 }
 
 
+.box.trivia {
+    background-color: #D8C116;
+}
 
+
+
+
+
+/* -----Trivia box styling----- */
+.box.trivia {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.box.trivia h1 {
+    font-family: "Ninjago", "Poppins";
+    letter-spacing: 1.5px;
+}
+
+.box.trivia p {
+    font-family: "Poppins";
+    font-size: clamp(1rem, 1.3vw, 2rem);
+}
+
+.box.trivia a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D81616;
+    border-radius: 15px;
+    width: 50%;
+    height: 50px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", Arial; 
+    font-size: clamp(1rem, 1.5vw, 2rem)
+}
 
 
 
