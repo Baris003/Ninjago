@@ -587,16 +587,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
-
-    margin-bottom: 0;       /* changed from -3rem */
-    min-height: 300px;      /* already present — good */
-    background-color: #000; /* already set — confirm it’s not overwritten */
-    position: relative;     /* optional for z-index layering */
-    z-index: 1;
-    background-color: black;
-    padding: 2rem;
-    flex-shrink: 0;
 }
 
 
