@@ -91,6 +91,7 @@ nav a {
     display: flex;
     align-items: center;
     position: relative;
+    cursor: pointer;
 }
 
 nav li:first-child{
@@ -113,6 +114,146 @@ nav a::after {
 nav a:hover::after {
     width: calc(100% - 60px); 
 } 
+
+
+
+
+/* ----- dropdown menu for info and games -----*/ 
+
+
+/* desktop version */
+#nav-info {
+    position: relative;
+}
+
+
+.dropdown.info {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 12rem;
+  background-color: rgba(146, 68, 68, 0.95); 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1rem;
+  gap: 2rem;
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000000;
+  text-align: center;
+}
+
+
+
+#nav-info:hover .dropdown.info {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+.dropdown.info li,
+.dropdown.games li {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+
+/* mobile version */
+.sidebar-info-page2 {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: -100%;
+}
+
+
+.sidebar-info-page2 button {
+    border: none;
+    background-color: transparent;
+    font-family: "Poppins";
+    border-radius: 1rem;
+    width: 100px;
+    font-weight: 600;
+    margin-top: 5rem;
+    color: white;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#nav-games {
+    position: relative;
+}
+
+
+.dropdown.games {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 12rem;
+  background-color: rgba(146, 68, 68, 0.95); 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1rem;
+  gap: 2rem;
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000000;
+}
+
+
+
+#nav-games:hover .dropdown.games {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

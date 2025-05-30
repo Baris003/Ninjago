@@ -15,10 +15,20 @@
         <nav>
             <ul class = "sidebar">
                 <li class = "sidebar-close-btn" onclick = "closeSidebar()"><img src = "images/close-sidebar.png"></li>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "pages/info.html">Info</a></li>
-                <li><a href = "pages/games.html">Spiele</a></li>
-                <li><a href = "https://www.lego.com/de-de/themes/ninjago" target="_blank">Shop</a></li>
+                <li class = "sidebar-info-page1"><a href = "index.html">Home</a></li>
+                <li id = "sidebar-info">
+                    <a href = "#" onclick = "sidebarInfoDropdown()">Info</a>
+                    <ul class = sidebar-info-page2>
+                        <li><a href = "pages/kai.html">Kai</a></li>
+                        <li><a href = "pages/jay.html">Jay</a></li>
+                        <li><a href = "pages/cole.html">Zane</a></li>
+                        <li><a href = "pages/cole.html">Cole</a></li>
+                        <li><a href = "pages/lloyd.html">Lloyd</a></li>
+                        <button onclick="sidebarInfoBack()" class="sidebar-back-btn">Back</button>
+                    </ul>
+                </li>
+                <li class = "sidebar-info-page1"><a href = "pages/games.html">Spiele</a></li>
+                <li class = "sidebar-info-page1"><a href = "https://www.lego.com/de-de/themes/ninjago" target="_blank">Shop</a></li>
             </ul>
 
 
@@ -27,8 +37,26 @@
                     <img src = "images/ninjago_logo.png" class = "logo">
                 </li>
                 <li class = "hide-on-mobile"><a href = "index.html">Home</a></li>
-                <li class = "hide-on-mobile"><a href = "pages/info.html">Info</a></li>
-                <li class = "hide-on-mobile"><a href = "pages/games.html">Spiele</a></li>
+                <li class = "hide-on-mobile" id = "nav-info">
+                    <a>Info</a>
+
+                    <ul class = "dropdown info">
+                        <li><a href = "pages/kai.html">Kai</a></li>
+                        <li><a href = "pages/jay.html">Jay</a></li>
+                        <li><a href = "pages/cole.html">Zane</a></li>
+                        <li><a href = "pages/cole.html">Cole</a></li>
+                        <li><a href = "pages/lloyd.html">Lloyd</a></li>
+                    </ul>
+                </li>
+                <li class = "hide-on-mobile" id = "nav-games">
+                    <a>Spiele</a>
+                    
+                    <ul class = "dropdown games">
+                        <li><a href = "pages/quiz.html">Welcher Ninja bist du</a></li>
+                        <li><a href = "pages/trivia.html">Ninjago Quiz</a></li>
+                        <li><a href = "pages/trivia.html">Ninjago Minigame</a></li>
+                    </ul>
+                </li>
                 <li class = "hide-on-mobile"><a target="_blank" href = "https://www.lego.com/de-de/themes/ninjago">Shop</a></li>
                 <li class = "open-sidebar" onclick = "openSidebar()"><img src = "images/open-sidebar.png" ></li>
             </ul>
@@ -174,8 +202,8 @@
         <a href = "https://github.com/Baris003/Ninjago" target="_blank">Auf GitHub ansehen</a>
     </footer>
 
-    <script src = "scripts/home.js"></script>
-    <script src = "scripts/navbar.js"></script>
-    
+
+    <script src = "scripts/base.js"></script>
+    <script src = "scripts/home.js"></script>    
 </body>
 </html>
