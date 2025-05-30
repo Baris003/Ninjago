@@ -4,3 +4,8 @@ function soundEffect(character) {
 
     audio.play();
 }
+
+//back to top button
+function backToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}

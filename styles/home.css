@@ -1,7 +1,18 @@
-/*----- HeroSection Styles -----*/
-main {
-    margin-top: 25vh;
+/* ========== Main Styles ========== */
+html, body {
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    height: 100%;
 }
+
+main {
+    margin-top: 20vh;
+    flex: 1 0 auto;
+}
+
+
+
+/*----- HeroSection Styles -----*/
 
 
 .hero-section {
@@ -557,6 +568,51 @@ main {
 
 
 
+/* ========== Footer Styling ========== */
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    background-color: #000;
+    color: #FACF00;
+    text-align: center;
+    padding: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    box-sizing: border-box;
+    overflow: hidden;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+    margin-bottom: 0;       /* changed from -3rem */
+    min-height: 300px;      /* already present — good */
+    background-color: #000; /* already set — confirm it’s not overwritten */
+    position: relative;     /* optional for z-index layering */
+    z-index: 1;
+    background-color: black;
+    padding: 2rem;
+    flex-shrink: 0;
+}
+
+
+
+
+
+footer a {
+    color: white;
+}
+
+
+
+
+
+
+
 /* ========== Media Queries ========== */
 
 /*----- responsive hero section -----*/
@@ -769,34 +825,8 @@ main {
 
 
 
-/*----- responsive quiz boxes section -----*/
-@media(max-width: 920px) {
-    .box.quiz {
-        flex-direction: column;
-    }
-
-    .box.quiz img {
-        margin: 0 auto;
-        width: clamp(150px, 10vw, 280px);
-        height: clamp(150px, 10vw, 280px);
-    }
-
-    .box-text {
-        margin: 0 auto;
-        gap: 0.5rem;
-        text-align: center;
-    }
-
-    .box-text a {
-        margin: 0 auto;
-    }
-}
-
-
-
-
-
-@media (hover: none) and (pointer: coarse) {
+/*----- poster section scrollabillity on mobile -----*/
+@media (pointer: coarse) {
   .poster-container {
     display: flex;
     flex-wrap: nowrap;
@@ -821,4 +851,35 @@ main {
     flex: 0 0 auto;
     scroll-snap-align: start;
   }
+}
+
+
+
+
+
+
+
+
+
+/*----- responsive quiz boxes section -----*/
+@media(max-width: 920px) {
+    .box.quiz {
+        flex-direction: column;
+    }
+
+    .box.quiz img {
+        margin: 0 auto;
+        width: clamp(150px, 10vw, 280px);
+        height: clamp(150px, 10vw, 280px);
+    }
+
+    .box-text {
+        margin: 0 auto;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .box-text a {
+        margin: 0 auto;
+    }
 }
