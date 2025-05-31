@@ -1,5 +1,4 @@
 // Sidebar buttons
-
 const sidebar = document.querySelector('.sidebar'); 
 
 function openSidebar() {
@@ -11,27 +10,32 @@ function closeSidebar() {
 }
 
 
-//Sidebar Dropdown 
 
-//Info
-function sidebarInfoDropdown() {
-    const sidebarInfoElements1 = document.getElementsByClassName('sidebar-info-page1');
-    for (let i = 0; i < sidebarInfoElements1.length; i++) {
-        sidebarInfoElements1[i].style.display = 'none';
+//Sidebar Sections Menu
+function toggleSidebarSection(section, action) {
+    const page1Elements = document.getElementsByClassName('sidebar-page1');
+    const page2Elements = document.getElementsByClassName(`sidebar-${section}-page2`);
+    console.log(page1Elements)
+    console.log(page2Elements)
+    console.log(section, action)
+
+    if (action === 'open') {
+        for (let i = 0; i < page1Elements.length; i++) {
+            page1Elements[i].style.display = 'none';
+        }
+        for (let i = 0; i < page2Elements.length; i++) {
+            page2Elements[i].style.display = 'flex';
+        }
     }
 
-    document.querySelector('.sidebar-info-page2').style.display = "flex";
+    else if (action === 'back') {
+        for (let i = 0; i < page2Elements.length; i++) {
+            page2Elements[i].style.display = 'none';
+        }
+
+        for (let i = 0; i < page1Elements.length; i++) {
+            page1Elements[i].style.display = 'flex';
+        }
+    }
 }
 
-
-function sidebarInfoBack() {
-    const sidebarInfoElements2 = document.getElementsByClassName('sidebar-info-page2');
-    for (let i = 0; i < sidebarInfoElements2.length; i++) {
-        sidebarInfoElements2[i].style.display = 'none';
-    }
-
-    const sidebarInfoElements1 = document.getElementsByClassName('sidebar-info-page1');
-    for (let i = 0; i < sidebarInfoElements1.length; i++) {
-        sidebarInfoElements1[i].style.display = 'flex';
-    }
-}
