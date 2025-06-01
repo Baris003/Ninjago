@@ -30,7 +30,7 @@ main {
 
 .construction-container img {
     max-width: 100%;
-    width: clamp(250px, 50vw, 850px);
+    width: clamp(250px, 40vw, 650px);
     height: auto;
     margin: 0 auto;
 }
@@ -39,7 +39,7 @@ main {
     text-align: center;
     color: white;
     font-family: "Poppins";
-    font-size: clamp(1rem, 8vw, 5rem);
+    font-size: clamp(1rem, 7vw, 4.5rem);
 }
 
 
