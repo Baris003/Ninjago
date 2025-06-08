@@ -1,0 +1,49 @@
+/* ========== Hero section styles==========*/
+
+.section {
+    height: 100%;
+    max-width: 2000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto -5rem auto;
+}
+
+
+.hero h1 {
+    text-align: center;
+    color: white;
+    font-family: "Ninjago";
+    font-size: clamp(1rem, 3vw, 2rem);
+    letter-spacing: 1.2px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* ========== Media Queries ==========*/
+
+/* responsive heros section */
+@media(max-width: 770px) {
+    .hero img {
+        margin: 20vh auto 0 auto;
+    }
+}
