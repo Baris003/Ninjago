@@ -1,4 +1,9 @@
 /* ========== Hero section styles==========*/
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
 
 .section {
     height: 100%;
@@ -31,6 +36,29 @@
     letter-spacing: 1.2px;
     font-weight: bold;
 }
+
+
+
+
+
+/* ========== Questions section ==========*/
+.section.questions {
+    margin-top: clamp(5vh, 10vh, 33vh);
+    margin-bottom: clamp(5vh, 10vh, 33vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+}
+
+.question {
+    width: clamp(80%, 66%, 50%);
+    max-width: 800px;
+    height: 50vh;
+    background-color: #2B0808;
+    border-radius: 50px;
+}
+
 
 
 
