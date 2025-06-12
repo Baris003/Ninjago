@@ -342,11 +342,7 @@ button:active {
     }
 }
 
-@media (max-width: 900px) {
-    nav {
-        margin-top: 0;
-    }
-}
+
 
 
 /*removing hover effects*/
