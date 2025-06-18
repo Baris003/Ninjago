@@ -82,463 +82,325 @@
             <div class = "question q1">
                 <h1 class = "question-text">Du wachst mitten in einer fremden Stadt auf. Was machst du zuerst?</h1>
                 <div class = "answers a1" onclick = "scrollToNext(`a2`)">
-                    <div>
-                        <input id = "a1-1" type = "radio" name = "a1">
-                        <label for = "a1-1">Ich schaue mich ruhig um und versuche, alles zu analysieren</label> <!--Zane-->
-                    </div>
-                    <div>
-                        <input id = "a1-2" type = "radio" name = "a1">
-                        <label for = "a1-2">Ich suche mir Verbündete – gemeinsam ist man stärker</label> <!--Lloyd-->
-                    </div>
-                    <div>
-                        <input id = "a1-3" type = "radio" name = "a1">
-                        <label for = "a1-3">Ich mache einen Witz – vielleicht sind die Leute dann netter</label> <!--Jay-->
-                    </div>
-                    <div>
-                        <input id = "a1-4" type = "radio" name = "a1">
-                        <label for = "a1-4">Ich verschwinde in den Schatten und beobachte</label> <!--Ronin-->
-                    </div>
-                    <div>
-                        <input id = "a1-5" type = "radio" name = "a1">
-                        <label for = "a1-5">Ich gehe in die nächste Bibliothek und suche Infos</label> <!--Misako-->
-                    </div>
+                    <!--Zane-->
+                    <label class = "quiz-option"><input type="radio" id = "a1-1" name = "a1">Ich schaue mich ruhig um und versuche, alles zu analysieren</label>
+                    <!--Lloyd--> 
+                    <label class = "quiz-option"><input type="radio" id = "a1-2" name = "a1">Ich suche mir Verbündete – gemeinsam ist man stärker</label> 
+                    <!--Jay-->
+                    <label class = "quiz-option"><input type="radio" id = "a1-3" name = "a1">Ich mache einen Witz – vielleicht sind die Leute dann netter</label> 
+                    <!--Ronin-->
+                    <label class = "quiz-option"><input type="radio" id = "a1-4" name = "a1">Ich verschwinde in den Schatten und beobachte</label> 
+                    <!--Misako-->
+                    <label class = "quiz-option"><input type="radio" id = "a1-5" name = "a1">Ich gehe in die nächste Bibliothek und suche Infos</label> 
+
                 </div>
             </div>
 
             <div class = "question q2">
                 <h1 class = "question-text">Jemand klaut dir etwas Wichtiges. Wie reagierst du?</h1>
                 <div class = "answers a2" onclick = "scrollToNext(`a3`)">
-                    <div>
-                        <input id = "a2-1" type = "radio" name = "a2">
-                        <label for = "a2-1">Ich hole es mir sofort zurück – mit voller Wucht</label> <!--Kai-->
-                    </div>
-                    <div id = "a2">
-                        <input id = "a2-2" type = "radio" name = "a2">
-                        <label for = "a2-2">Ich versuche es mit einem Deal</label> <!--Nadakhan-->
-                    </div>
-                    <div>
-                        <input id = "a2-3" type = "radio" name = "a2">
-                        <label for = "a2-3">Ich überlege, ob ich es wirklich brauche</label> <!--Wu-->
-                    </div>
-                    <div>
-                        <input id = "a2-4" type = "radio" name = "a2">
-                        <label for = "a2-4">Ich erzähle es erstmal niemandem und beobachte</label> <!--Skylor-->
-                    </div>
-                    <div>
-                        <input id = "a2-5" type = "radio" name = "a2">
-                        <label for = "a2-5">Ich überlege mir einen verrückten Trick, um es zurückzubekommen</label> <!--Dareth-->
-                    </div>
+                    <!--Kai-->
+                    <label class = "quiz-option"><input type="radio" id = "a2-1" name = "a2">Ich hole es mir sofort zurück – mit voller Wucht</label> 
+                    <!--Nadakhan-->
+                    <label class = "quiz-option" id = "a2"><input type="radio" id = "a2-2" name = "a2">Ich versuche es mit einem Deal</label>
+                    <!--Wu-->
+                    <label class = "quiz-option"><input type="radio" id = "a2-3" name = "a2">Ich überlege, ob ich es wirklich brauche</label>
+                    <!--Skylor-->
+                    <label class = "quiz-option"><input type="radio" id = "a2-4" name = "a2">Ich erzähle es erstmal niemandem und beobachte</label>
+                    <!--Dareth-->
+                    <label class = "quiz-option"><input type="radio" id = "a2-5" name = "a2">Ich überlege mir einen verrückten Trick, um es zurückzubekommen</label>
                 </div>
             </div>
 
             <div class = "question q3">
                 <h1 class = "question-text">Welche Aufgabe würdest du am liebsten übernehmen?</h1>
                 <div class = "answers a3" onclick = "scrollToNext(`a4`)">
-                    <div>
-                        <input id = "a3-1" type = "radio" name = "a3">
-                        <label for = "a3-1">Die Verteidigung der Gruppe</label> <!--Cole-->
-                    </div>
-                    <div id = "a3">
-                        <input id = "a3-2" type = "radio" name = "a3">
-                        <label for = "a3-2">Die Technik – irgendjemand muss ja was bauen</label> <!--Pixal-->
-                    </div>
-                    <div>
-                        <input id = "a3-3" type = "radio" name = "a3">
-                        <label for = "a3-3">Die Führung, aber im Team</label> <!--Lloyd-->
-                    </div>
-                    <div>
-                        <input id = "a3-4" type = "radio" name = "a3">
-                        <label for = "a3-4">Die Ablenkung, damit andere unbemerkt agieren können</label> <!--Jay-->
-                    </div>
-                    <div>
-                        <input id = "a3-5" type = "radio" name = "a3">
-                        <label for = "a3-5">Die gefährliche Mission, ganz allein</label> <!--Morro-->
-                    </div>
+                    <!--Cole-->
+                    <label class = "quiz-option"><input type="radio" id = "a3-1" name = "a3">Die Verteidigung der Gruppe</label>
+                    <!--Pixal-->
+                    <label class = "quiz-option" id = "a3"><input type="radio" id = "a3-2" name = "a3">Die Technik – irgendjemand muss ja was bauen</label>
+                    <!--Lloyd-->
+                    <label class = "quiz-option"><input type="radio" id = "a3-3" name = "a3">Die Führung</label>
+                    <!--Jay-->
+                    <label class = "quiz-option"><input type="radio" id = "a3-4" name = "a3">Die Ablenkung, damit andere unbemerkt agieren können</label>
+                    <!--Morro-->
+                    <label class = "quiz-option"><input type="radio" id = "a3-5" name = "a3">Die gefährliche Mission, ganz allein</label>
                 </div>
             </div>
 
             <div class = "question q4">
                 <h1 class = "question-text">Was bedeutet „Stärke“ für dich?</h1>
                 <div class = "answers a4" onclick = "scrollToNext(`a5`)">
-                    <div>
-                        <input id = "a4-1" type = "radio" name = "a4">
-                        <label for = "a4-1">Sich nie zu verstecken – auch mit Schwächen</label> <!--Dareth-->
-                    </div>
-                    <div id = "a4">
-                        <input id = "a4-2" type = "radio" name = "a4">
-                        <label for = "a4-2">Für andere einzustehen</label> <!--Nya-->
-                    </div>
-                    <div>
-                        <input id = "a4-3" type = "radio" name = "a4">
-                        <label for = "a4-3">Die Vergangenheit loslassen zu können</label> <!--Garmadon-->
-                    </div>
-                    <div>
-                        <input id = "a4-4" type = "radio" name = "a4">
-                        <label for = "a4-4">Seine Ziele zu erreichen – egal wie</label> <!--Nadakhan-->
-                    </div>
-                    <div>
-                        <input id = "a4-5" type = "radio" name = "a4">
-                        <label for = "a4-5">Fehler zuzugeben</label> <!--Cole-->
-                    </div>
+                    <!--Dareth-->
+                    <label class = "quiz-option"><input type="radio" id = "a4-1" name = "a4">Sich nie zu verstecken – auch mit Schwächen</label>
+                    <!--Nya-->
+                    <label class = "quiz-option" id = "a4"><input type="radio" id = "a4-2" name = "a4">Für andere einzustehen</label>
+                    <!--Garmadon-->
+                    <label class = "quiz-option"><input type="radio" id = "a4-3" name = "a4">Die Vergangenheit loslassen zu können</label>
+                    <!--Nadakhan-->
+                    <label class = "quiz-option"><input type="radio" id = "a4-4" name = "a4">Seine Ziele zu erreichen – egal wie</label>
+                    <!--Cole-->
+                    <label class = "quiz-option"><input type="radio" id = "a4-5" name = "a4">Fehler zuzugeben</label>
                 </div>
             </div>
 
             <div class = "question q5">
                 <h1 class = "question-text">Jemand bittet dich um Hilfe bei etwas Gefährlichem. Was sagst du?</h1>
                 <div class = "answers a5" onclick = "scrollToNext(`a6`)">
-                    <div>
-                        <input id = "a5-1" type = "radio" name = "a5">
-                        <label for = "a5-1">"Na klar - auf geht's!"</label> <!--Kai-->
-                    </div>
-                    <div id = "a5">
-                        <input id = "a5-2" type = "radio" name = "a5">
-                        <label for = "a5-2">„Ich überlege es mir… was springt dabei für mich raus?“</label> <!--Ronin-->
-                    </div>
-                    <div>
-                        <input id = "a5-3" type = "radio" name = "a5">
-                        <label for = "a5-3">„Nur, wenn es niemanden verletzt.“</label> <!--Pixal-->
-                    </div>
-                    <div>
-                        <input id = "a5-4" type = "radio" name = "a5">
-                        <label for = "a5-4">„Ja – aber ich hab ein paar Regeln.“</label> <!--Wu-->
-                    </div>
-                    <div>
-                        <input id = "a5-5" type = "radio" name = "a5">
-                        <label for = "a5-5">„Hilfe ist keine Frage. Ich bin dabei.“ </label> <!--Misako-->
-                    </div>
+                    <!--Kai-->
+                    <label class = "quiz-option"><input type="radio" id = "a5-1" name = "a5">"Na klar - auf geht's!"</label>
+                    <!--Ronin-->
+                    <label class = "quiz-option" id = "a5"><input type="radio" id = "a5-2" name = "a5">„Ich überlege es mir… was springt dabei für mich raus?“</label>
+                    <!--Pixal-->
+                    <label class = "quiz-option"><input type="radio" id = "a5-3" name = "a5">„Nur, wenn es niemanden verletzt.“</label>
+                    <!--Pixal-->
+                    <label class = "quiz-option"><input type="radio" id = "a5-4" name = "a5">„Ja – aber ich hab ein paar Regeln.“</label>
+                    <!--Misako-->
+                    <label class = "quiz-option"><input type="radio" id = "a5-4" name = "a5">„Hilfe ist keine Frage. Ich bin dabei.“</label>
                 </div>
             </div>
 
             <div class = "question q6">
                 <h1 class = "question-text">Was macht dich richtig wütend?</h1>
                 <div class = "answers a6" onclick = "scrollToNext(`a7`)">
-                    <div>
-                        <input id = "a6-1" type = "radio" name = "a6">
-                        <label for = "a6-1">Wenn jemand besser sein will als ich</label> <!--Morro-->
-                    </div>
-                    <div id = "a6">
-                        <input id = "a6-2" type = "radio" name = "a6">
-                        <label for = "a6-2">Wenn niemand auf mich hört</label> <!--Wu-->
-                    </div>
-                    <div>
-                        <input id = "a6-3" type = "radio" name = "a6">
-                        <label for = "a6-3">Wenn jemand Technik beleidigt</label> <!--Pixal-->
-                    </div>
-                    <div>
-                        <input id = "a6-4" type = "radio" name = "a6">
-                        <label for = "a6-4">Wenn jemand unfair ist</label> <!--Nya-->
-                    </div>
-                    <div>
-                        <input id = "a6-5" type = "radio" name = "a6">
-                        <label for = "a6-5">Wenn ich ausgelacht werde</label> <!--Dareth-->
-                    </div>
+                    <!--Morro-->
+                    <label class = "quiz-option"><input type="radio" id = "a6-1" name = "a6">Wenn jemand besser sein will als ich</label>
+                    <!--Wu-->
+                    <label class = "quiz-option" id = "a6"><input type="radio" id = "a6-2" name = "a6">Wenn niemand auf mich hört</label>
+                    <!--Pixal-->
+                    <label class = "quiz-option"><input type="radio" id = "a6-3" name = "a6">Wenn jemand Technik beleidigt</label>
+                    <!--Nya-->
+                    <label class = "quiz-option"><input type="radio" id = "a6-4" name = "a6">Wenn jemand unfair ist</label>
+                    <!--Dareth-->
+                    <label class = "quiz-option"><input type="radio" id = "a6-5" name = "a6">Wenn ich ausgelacht werde</label>
                 </div>
             </div>
 
             <div class = "question q7">
                 <h1 class = "question-text">Was machst du in deiner Freizeit?</h1>
                 <div class = "answers a7" onclick = "scrollToNext(`a8`)">
-                    <div>
-                        <input id = "a7-1" type = "radio" name = "a7">
-                        <label for = "a7-1">Trainieren – immer besser werden</label> <!--Kai-->
-                    </div>
-                    <div id = "a7">
-                        <input id = "a7-2" type = "radio" name = "a7">
-                        <label for = "a7-2">Erfinden oder reparieren</label> <!--Zane-->
-                    </div>
-                    <div>
-                        <input id = "a7-3" type = "radio" name = "a7">
-                        <label for = "a7-3">Leute beobachten und Pläne machen</label> <!--Skylor-->
-                    </div>
-                    <div>
-                        <input id = "a7-4" type = "radio" name = "a7">
-                        <label for = "a7-4">Etwas verkaufen – irgendwas finde ich immer.</label> <!--Ronin-->
-                    </div>
-                    <div>
-                        <input id = "a7-5" type = "radio" name = "a7">
-                        <label for = "a7-5">Alte Geschichten und Bücher lesen</label> <!--Misako-->
-                    </div>
+                    <!--Kai-->
+                    <label class = "quiz-option"><input type="radio" id = "a7-1" name = "a7">Trainieren – immer besser werden</label>
+                    <!--Zane-->
+                    <label class = "quiz-option" id = "a7"><input type="radio" id = "a7-2" name = "a7">Erfinden oder reparieren</label>
+                    <!--Skylor-->
+                    <label class = "quiz-option"><input type="radio" id = "a7-3" name = "a7">Leute beobachten und Pläne machen</label>
+                    <!--Ronin-->
+                    <label class = "quiz-option"><input type="radio" id = "a7-4" name = "a7">Etwas verkaufen – irgendwas finde ich immer</label>
+                    <!--Misako-->
+                    <label class = "quiz-option"><input type="radio" id = "a7-5" name = "a7">Alte Geschichten und Bücher lesen</label>
                 </div>
             </div>
 
             <div class = "question q8">
                 <h1 class = "question-text">Dein Team streitet sich. Was tust du?</h1>
                 <div class = "answers a8" onclick = "scrollToNext(`a9`)">
-                    <div>
-                        <input id = "a8-1" type = "radio" name = "a8">
-                        <label for = "a8-1">Ich versuche zu vermitteln – aber klar und bestimmt</label> <!--Lloyd-->
-                    </div>
-                    <div id = "a8">
-                        <input id = "a8-2" type = "radio" name = "a8">
-                        <label for = "a8-2">Ich mache einen Witz, um die Stimmung zu lockern</label> <!--Jay-->
-                    </div>
-                    <div>
-                        <input id = "a8-3" type = "radio" name = "a8">
-                        <label for = "a8-3">Ich halte mich raus – das bringt eh nichts</label> <!--Garmadon-->
-                    </div>
-                    <div>
-                        <input id = "a8-4" type = "radio" name = "a8">
-                        <label for = "a8-4">Ich spreche ruhig mit jedem einzeln</label> <!--Wu-->
-                    </div>
-                    <div>
-                        <input id = "a8-5" type = "radio" name = "a8">
-                        <label for = "a8-5">Ich gehe erstmal – wenn sie mich brauchen, finden sie mich</label> <!--Skylor-->
-                    </div>
+                    <!--Lloyd-->
+                    <label class = "quiz-option"><input type="radio" id = "a8-1" name = "a8">Ich versuche zu vermitteln – aber klar und bestimmt</label>
+                    <!--Jay-->
+                    <label class = "quiz-option" id = "a8"><input type="radio" id = "a8-2" name = "a8">Ich mache einen Witz, um die Stimmung zu lockern</label>
+                    <!--Garmadon-->
+                    <label class = "quiz-option"><input type="radio" id = "a8-3" name = "a8">Ich halte mich raus – das bringt eh nichts</label>
+                    <!--Wu-->
+                    <label class = "quiz-option"><input type="radio" id = "a8-4" name = "a8">Ich spreche ruhig mit jedem einzeln</label>
+                    <!--Skylor-->
+                    <label class = "quiz-option"><input type="radio" id = "a8-5" name = "a8">Ich gehe erstmal – wenn sie mich brauchen, finden sie mich</label>
                 </div>
             </div>
 
             <div class = "question q9">
                 <h1 class = "question-text">Du findest eine Truhe mit unbekanntem Inhalt. Was machst du?</h1>
                 <div class = "answers a9" onclick = "scrollToNext(`a10`)">
-                    <div>
-                        <input id = "a9-1" type = "radio" name = "a9">
-                        <label for = "a9-1">Sofort öffnen - Abenteuer!</label> <!--Kai-->
-                    </div>
-                    <div id = "a9">
-                        <input id = "a9-2" type = "radio" name = "a9">
-                        <label for = "a9-2">Ich lasse andere vorgehen, falls es gefährlich ist</label> <!--Ronin-->
-                    </div>
-                    <div>
-                        <input id = "a9-3" type = "radio" name = "a9">
-                        <label for = "a9-3">Ich untersuche die Truhe auf Fallen</label> <!--Zane-->
-                    </div>
-                    <div>
-                        <input id = "a9-4" type = "radio" name = "a9">
-                        <label for = "a9-4">Ich frage mich, wer sie wohl zurückgelassen hat</label> <!--Mikaso-->
-                    </div>
-                    <div>
-                        <input id = "a9-5" type = "radio" name = "a9">
-                        <label for = "a9-5">Ich denke über die Möglichkeiten nach – und mache einen Wunsch</label> <!--Nadakhan-->
-                    </div>
+                    <!--Kai-->
+                    <label class = "quiz-option"><input type="radio" id = "a9-1" name = "a9">Sofort öffnen - Abenteuer!</label>
+                    <!--Ronin-->
+                    <label class = "quiz-option" id = "a9"><input type="radio" id = "a9-2" name = "a9">Ich lasse andere vorgehen, falls es gefährlich ist</label>
+                    <!--Zane-->
+                    <label class = "quiz-option"><input type="radio" id = "a9-3" name = "a9">Ich untersuche die Truhe auf Fallen</label>
+                    <!--Mikaso-->
+                    <label class = "quiz-option"><input type="radio" id = "a9-4" name = "a9">Ich frage mich, wer sie wohl zurückgelassen hat</label>
+                    <!--Nadakhan-->
+                    <label class = "quiz-option"><input type="radio" id = "a9-5" name = "a9">Ich denke über die Möglichkeiten nach – und mache einen Wunsch</label>
                 </div>
             </div>
 
             <div class = "question q10">
                 <h1 class = "question-text">Wie sehen andere dich meistens?</h1>
                 <div class = "answers a10" onclick = "scrollToNext(`a11`)">
-                    <div>
-                        <input id = "a10-1" type = "radio" name = "a10">
-                        <label for = "a10-1">Ruhig, klug und geheimnisvoll</label> <!--Wu-->
-                    </div>
-                    <div id = "a10">
-                        <input id = "a10-2" type = "radio" name = "a10">
-                        <label for = "a10-2">Lustig, laut und manchmal nervös</label> <!--Jay-->
-                    </div>
-                    <div>
-                        <input id = "a10-3" type = "radio" name = "a10">
-                        <label for = "a10-3">Stur, stark und zuverlässig</label> <!--Cole-->
-                    </div>
-                    <div>
-                        <input id = "a10-4" type = "radio" name = "a10">
-                        <label for = "a10-4">Charmant, aber undurchschaubar</label> <!--Skylor-->
-                    </div>
-                    <div>
-                        <input id = "a10-5" type = "radio" name = "a10">
-                        <label for = "a10-5">Chaotisch, aber irgendwie sympathisch</label> <!--Dareth-->
-                    </div>
+                    <!--Wu-->
+                    <label class = "quiz-option"><input type="radio" id = "a10-1" name = "a10">Ruhig, klug und geheimnisvoll</label>
+                    <!--Jay-->
+                    <label class = "quiz-option" id = "a10"><input type="radio" id = "a10-2" name = "a10">Lustig, laut und manchmal nervös</label>
+                    <!--Cole-->
+                    <label class = "quiz-option"><input type="radio" id = "a10-3" name = "a10">Stur, stark und zuverlässig</label>
+                    <!--Skylor-->
+                    <label class = "quiz-option"><input type="radio" id = "a10-4" name = "a10">Charmant, aber undurchschaubar</label>
+                    <!--Dareth-->
+                    <label class = "quiz-option"><input type="radio" id = "a10-5" name = "a10">Chaotisch, aber irgendwie sympathisch</label>
                 </div>
             </div>
 
             <div class = "question q11">
                 <h1 class = "question-text">Wenn du einen Ort bauen dürftest – was wäre es?</h1>
                 <div class = "answers a11" onclick = "scrollToNext(`a12`)">
-                    <div>
-                        <input id = "a11-1" type = "radio" name = "a11">
-                        <label for = "a11-1">Eine sichere Festung – für alle</label> <!--Nya-->
-                    </div>
-                    <div id = "a11">
-                        <input id = "a11-2" type = "radio" name = "a11">
-                        <label for = "a11-2">Ein geheimes Versteck, nur für mich</label> <!--Morro-->
-                    </div>
-                    <div>
-                        <input id = "a11-3" type = "radio" name = "a11">
-                        <label for = "a11-3">Ein riesiger Technik-Labor-Turm</label> <!--Pixal-->
-                    </div>
-                    <div>
-                        <input id = "a11-4" type = "radio" name = "a11">
-                        <label for = "a11-4">Eine schwimmende Insel mit allem Luxus</label> <!--Nadkhan-->
-                    </div>
-                    <div>
-                        <input id = "a11-5" type = "radio" name = "a11">
-                        <label for = "a11-5">Ein offenes Dojo für jeden</label> <!--Lloyd-->
-                    </div>
+                    <!--Nya-->
+                    <label class = "quiz-option"><input type="radio" id = "a11-1" name = "a11">Eine sichere Festung für alle</label>
+                    <!--Morro-->
+                    <label class = "quiz-option" id = "a11"><input type="radio" id = "a11-2" name = "a11">Ein geheimes Versteck, nur für mich</label>
+                    <!--Pixal-->
+                    <label class = "quiz-option"><input type="radio" id = "a11-3" name = "a11">Ein riesiger Technik-Labor-Turm</label>
+                    <!--Nadakhan-->
+                    <label class = "quiz-option"><input type="radio" id = "a11-4" name = "a11">Eine schwimmende Insel mit allem Luxus</label>
+                    <!--Lloyd-->
+                    <label class = "quiz-option"><input type="radio" id = "a11-5" name = "a11">Ein offenes Dojo für jeden</label>
                 </div>
             </div>
 
             <div class = "question q12">
                 <h1 class = "question-text">Wovor hast du heimlich Angst?</h1>
                 <div class = "answers a12" onclick = "scrollToNext(`a13`)">
-                    <div>
-                        <input id = "a12-1" type = "radio" name = "a12">
-                        <label for = "a12-1">Nicht dazuzugehören</label> <!--Dareth-->
-                    </div>
-                    <div id = "a12">
-                        <input id = "a12-2" type = "radio" name = "a12">
-                        <label for = "a12-2">Zu werden wie mein dunkles Ich</label> <!--Garmadon-->
-                    </div>
-                    <div>
-                        <input id = "a12-3" type = "radio" name = "a12">
-                        <label for = "a12-3">Zu versagen, wenn es darauf ankommt</label> <!--Kai-->
-                    </div>
-                    <div>
-                        <input id = "a12-4" type = "radio" name = "a12">
-                        <label for = "a12-4">Allein zu sein</label> <!--Cole-->
-                    </div>
-                    <div>
-                        <input id = "a12-5" type = "radio" name = "a12">
-                        <label for = "a12-5">Dass meine Technik bei einem Notfall nicht ausreicht</label> <!--Zane-->
-                    </div>
+                    <!--Dareth-->
+                    <label class = "quiz-option"><input type="radio" id = "a12-1" name = "a12">Nicht dazuzugehören</label>
+                    <!--Garmadon-->
+                    <label class = "quiz-option" id = "a12"><input type="radio" id = "a12-2" name = "a12">Zu werden wie mein dunkles Ich</label>
+                    <!--Kai-->
+                    <label class = "quiz-option"><input type="radio" id = "a12-3" name = "a12">Zu versagen, wenn es darauf ankommt</label>
+                    <!--Cole-->
+                    <label class = "quiz-option"><input type="radio" id = "a12-4" name = "a12">Allein zu sein</label>
+                    <!--Pixal-->
+                    <label class = "quiz-option"><input type="radio" id = "a12-5" name = "a12">Dass meine Technik bei einem Notfall nicht ausreicht</label>
                 </div>
             </div>
 
             <div class = "question q13">
                 <h1 class = "question-text">Wie kämpst du am liebsten?</h1>
                 <div class = "answers a13" onclick = "scrollToNext(`a14`)">
-                    <div>
-                        <input id = "a13-1" type = "radio" name = "a13">
-                        <label for = "a13-1">Ich setze auf rohe Gewalt und schrecke vor Nichts zurück</label> <!--Garmadon-->
-                    </div>
-                    <div id = "a13">
-                        <input id = "a13-2" type = "radio" name = "a13">
-                        <label for = "a13-2">Ich kämpfe strategisch und ruhig, immer mit einem Plan</label> <!--Wu-->
-                    </div>
-                    <div>
-                        <input id = "a13-3" type = "radio" name = "a13">
-                        <label for = "a13-3">Ich liebe Geschwindigkeit und Akrobatik in einem Kampf</label> <!--Skylor-->
-                    </div>
-                    <div>
-                        <input id = "a13-4" type = "radio" name = "a13">
-                        <label for = "a13-4">Ich nutze gerne Magie oder besondere Fähigkeiten</label> <!--Morro-->
-                    </div>
-                    <div>
-                        <input id = "a13-5" type = "radio" name = "a13">
-                        <label for = "a13-5">Ich arbeite am Besten im Team und unterstütze meine Freunde</label> <!--Cole-->
-                    </div>
+                    <!--Garmadon-->
+                    <label class = "quiz-option"><input type="radio" id = "a13-1" name = "a13">Ich setze auf rohe Gewalt und schrecke vor Nichts zurück</label>
+                    <!--Wu-->
+                    <label class = "quiz-option" id = "a13"><input type="radio" id = "a13-2" name = "a13">Ich kämpfe strategisch und ruhig, immer mit einem Plan</label>
+                    <!--Skylor-->
+                    <label class = "quiz-option"><input type="radio" id = "a13-3" name = "a13">Ich liebe Geschwindigkeit und Akrobatik in einem Kampf</label>
+                    <!--Morro-->
+                    <label class = "quiz-option"><input type="radio" id = "a13-4" name = "a13">Ich nutze gerne Magie oder besondere Fähigkeiten</label>
+                    <!--Cole-->
+                    <label class = "quiz-option"><input type="radio" id = "a13-5" name = "a13">Ich arbeite am Besten im Team und unterstütze meine Freunde</label>
                 </div>
             </div>
 
             <div class = "question q14">
                 <h1 class = "question-text">Was macht dich wirklich glücklich?</h1>
                 <div class = "answers a14" onclick = "scrollToNext(`a15`)">
-                    <div>
-                        <input id = "a14-1" type = "radio" name = "a14">
-                        <label for = "a14-1">Ein echter Sieg, für den ich kämpfen musste</label> <!--Kai-->
-                    </div>
-                    <div id = "a14">
-                        <input id = "a14-2" type = "radio" name = "a14">
-                        <label for = "a14-2">Zeit mit Freunden, ohne Stress</label> <!--Jay-->
-                    </div>
-                    <div>
-                        <input id = "a14-3" type = "radio" name = "a14">
-                        <label for = "a14-3">Jemandem helfen, auch wenn es niemand merkt</label> <!--Misako-->
-                    </div>
-                    <div>
-                        <input id = "a14-4" type = "radio" name = "a14">
-                        <label for = "a14-4">Wenn ich jemandem etwas beibringen kann</label> <!--Wu-->
-                    </div>
-                    <div>
-                        <input id = "a14-5" type = "radio" name = "a14">
-                        <label for = "a14-5">Wenn ich meine Vergangenheit hinter mir lasse und mir selbst vergeben kann</label> <!--Garmadon-->
-                    </div>
+                    <!--Kai-->
+                    <label class = "quiz-option"><input type="radio" id = "a14-1" name = "a14">Ein echter Sieg, für den ich kämpfen musste</label>
+                    <!--Jay-->
+                    <label class = "quiz-option" id = "a14"><input type="radio" id = "a14-2" name = "a14">Zeit mit Freunden, ohne Stress</label>
+                    <!--Misako-->
+                    <label class = "quiz-option"><input type="radio" id = "a14-3" name = "a14">Jemandem helfen, auch wenn es niemand merkt</label>
+                    <!--Wu-->
+                    <label class = "quiz-option"><input type="radio" id = "a14-4" name = "a14">Wenn ich jemandem etwas beibringen kann</label>
+                    <!--Garmadon-->
+                    <label class = "quiz-option"><input type="radio" id = "a14-5" name = "a14">Wenn ich meine Vergangenheit hinter mir lasse und mir selbst vergeben kann</label>
                 </div>
             </div>
 
             <div class = "question q15">
                 <h1 class = "question-text">Wie verhälst du dich in einer völlig neuen Gruppe von Leuten?</h1>
                 <div class = "answers a15" onclick = "scrollToNext(`a16`)">
-                    <div>
-                        <input id = "a15-1" type = "radio" name = "a15">
-                        <label for = "a15-1">Ich übernehme direkt die Führung, wenn niemand anderes es tut</label> <!--Lloyd-->
-                    </div>
-                    <div id = "a15">
-                        <input id = "a15-2" type = "radio" name = "a15">
-                        <label for = "a15-2">Ich passe mich an und finde schnell Freunde</label> <!--Skylor-->
-                    </div>
-                    <div>
-                        <input id = "a15-3" type = "radio" name = "a15">
-                        <label for = "a15-3">Ich bleibe höflich, aber sage klar was ich denke</label> <!--Nya-->
-                    </div>
-                    <div>
-                        <input id = "a15-4" type = "radio" name = "a15">
-                        <label for = "a15-4">Ich mache sofort Witze, um das Eis zu brechen</label> <!--Jay-->
-                    </div>
-                    <div>
-                        <input id = "a15-5" type = "radio" name = "a15">
-                        <label for = "a15-5">Ich beobachte die Gruppe, aber innerlich bin ich überzeugt, dass ich der Beste bin</label> <!--Morro-->
-                    </div>
+                    <!--Lloyd-->
+                    <label class = "quiz-option"><input type="radio" id = "a15-1" name = "a15">Ich übernehme direkt die Führung, wenn niemand anderes es tut</label>
+                    <!--Skylor-->
+                    <label class = "quiz-option" id = "a15"><input type="radio" id = "a15-2" name = "a15">Ich passe mich an und finde schnell Freunde</label>
+                    <!--Nya-->
+                    <label class = "quiz-option"><input type="radio" id = "a15-3" name = "a15">Ich bleibe höflich, aber sage klar was ich denke</label>
+                    <!--Jay-->
+                    <label class = "quiz-option"><input type="radio" id = "a15-4" name = "a15">Ich mache sofort Witze, um das Eis zu brechen</label>
+                    <!--Morro-->
+                    <label class = "quiz-option"><input type="radio" id = "a15-5" name = "a15">Ich beobachte die Gruppe, aber innerlich bin ich überzeugt, dass ich der Beste bin</label>
                 </div>
             </div>
 
             <div class = "question q16">
                 <h1 class = "question-text">Was ist dein größtes Ziel?</h1>
                 <div class = "answers a16" onclick = "scrollToNext(`a17`)">
-                    <div>
-                        <input id = "a16-1" type = "radio" name = "a16">
-                        <label for = "a16-1">Endlich ernst genommen zu werden</label> <!--Dareth-->
-                    </div>
-                    <div id = "a16">
-                        <input id = "a16-2" type = "radio" name = "a16">
-                        <label for = "a16-2">Die Vergangenheit wiedergutmachen</label> <!--Garmadon-->
-                    </div>
-                    <div>
-                        <input id = "a16-3" type = "radio" name = "a16">
-                        <label for = "a16-3">Mein volles Potenzial entfalten</label> <!--Lloyd-->
-                    </div>
-                    <div>
-                        <input id = "a16-4" type = "radio" name = "a16">
-                        <label for = "a16-4">Etwas zu hinterlassen, das bleibt</label> <!--Misako-->
-                    </div>
-                    <div>
-                        <input id = "a16-5" type = "radio" name = "a16">
-                        <label for = "a16-5">Mich weiterzuentwickeln und so nützlich wie möglich zu machen</label> <!--Pixal-->
-                    </div>
+                    <!--Dareth-->
+                    <label class = "quiz-option"><input type="radio" id = "a16-1" name = "a16">Endlich ernst genommen zu werden</label>
+                    <!--Garmadon-->
+                    <label class = "quiz-option" id = "a16"><input type="radio" id = "a16-2" name = "a16">Die Vergangenheit wiedergutmachen</label>
+                    <!--Lloyd-->
+                    <label class = "quiz-option"><input type="radio" id = "a16-3" name = "a16">Mein volles Potenzial entfalten</label>
+                    <!--Misako-->
+                    <label class = "quiz-option"><input type="radio" id = "a16-4" name = "a16">Etwas zu hinterlassen, das bleibt</label>
+                    <!--Pixal-->
+                    <label class = "quiz-option"><input type="radio" id = "a16-5" name = "a16">Mich weiterzuentwickeln und so nützlich wie möglich zu machen</label>
                 </div>
             </div>
 
             <div class="question q17">
                 <h1 class="question-text">Wenn du eine Herausforderung bekommst, wie gehst du damit um?</h1>
                 <div class="answers a17" onclick = "scrollToNext(`a18`)">
-                    <div><input id="a17-1" type="radio" name="a17"><label for="a17-1">Ich nehme sie direkt an, egal wie schwer sie ist</label> <!--Kai--></div>
-                    <div id = "a17"><input id="a17-2" type="radio" name="a17"><label for="a17-2">Ich überlege zuerst einen cleveren Plan</label> <!--Pixal--></div>
-                    <div><input id="a17-3" type="radio" name="a17"><label for="a17-3">Ich vertraue darauf, dass ich aus Fehlern lerne</label> <!--Cole--></div>
-                    <div><input id="a17-4" type="radio" name="a17"><label for="a17-4">Ich schaue, wie andere sie lösen, und passe mich an</label> <!--Skylor--></div>
-                    <div><input id="a17-5" type="radio" name="a17"><label for="a17-5">Ich übernehme die Führung und motiviere andere</label> <!--Lloyd--></div>
+                    <!--Kai-->
+                    <label class = "quiz-option"><input type="radio" id = "a17-1" name = "a17">Ich nehme sie direkt an, egal wie schwer sie ist</label>
+                    <!--Kai-->
+                    <label class = "quiz-option" id = "a17"><input type="radio" id = "a17-2" name = "a17">Ich überlege zuerst einen cleveren Plan</label>
+                    <!--Cole-->
+                    <label class = "quiz-option"><input type="radio" id = "a17-3" name = "a17">Ich vertraue darauf, dass ich aus Fehlern lerne</label>
+                    <!--Skylor-->
+                    <label class = "quiz-option"><input type="radio" id = "a17-4" name = "a17">Ich schaue, wie andere sie lösen, und passe mich an</label>
+                    <!--Lloyd-->
+                    <label class = "quiz-option"><input type="radio" id = "a17-5" name = "a17">Ich übernehme die Führung und motiviere andere</label>
                 </div>
             </div>
 
             <div class="question q18">
                 <h1 class="question-text">Wie fühlst du dich, wenn du mal nicht im Mittelpunkt stehst?</h1>
                 <div class="answers a18" onclick = "scrollToNext(`a19`)">
-                    <div><input id="a18-1" type="radio" name="a18"><label for="a18-1">Das stört mich nicht, ich arbeite lieber im Hintergrund</label> <!--Zane--></div>
-                    <div id = "a18"><input id="a18-2" type="radio" name="a18"><label for="a18-2">Ich finde es okay, solange das Ziel erreicht wird</label> <!--Wu--></div>
-                    <div><input id="a18-3" type="radio" name="a18"><label for="a18-3">Ich werde unruhig und versuche, Aufmerksamkeit zu bekommen</label> <!--Jay--></div>
-                    <div><input id="a18-4" type="radio" name="a18"><label for="a18-4">Ich nutze die Gelegenheit, um etwas zu planen</label> <!--Ronin--></div>
-                    <div><input id="a18-5" type="radio" name="a18"><label for="a18-5">Ich finde es manchmal schwer, aber ich akzeptiere es</label> <!--Nya--></div>
+                    <!--Zane-->
+                    <label class = "quiz-option"><input type="radio" id = "a18-1" name = "a18">Das stört mich nicht, ich arbeite lieber im Hintergrund</label>
+                    <!--Wu-->
+                    <label class = "quiz-option" id = "a18"><input type="radio" id = "a18-2" name = "a18">Ich finde es okay, solange das Ziel erreicht wird</label>
+                    <!--Jay-->
+                    <label class = "quiz-option"><input type="radio" id = "a18-3" name = "a18">Ich werde unruhig und versuche, Aufmerksamkeit zu bekommen</label>
+                    <!--Ronin-->
+                    <label class = "quiz-option"><input type="radio" id = "a18-4" name = "a18">Ich nutze die Gelegenheit, um etwas zu planen</label>
+                    <!--Nya-->
+                    <label class = "quiz-option"><input type="radio" id = "a18-5" name = "a18">Ich finde es manchmal schwer, aber ich akzeptiere es</label>
                 </div>
             </div>
 
             <div class="question q19">
                 <h1 class="question-text">Was ist dir bei deinen Freunden am wichtigsten?</h1>
                 <div class="answers a19" onclick = "scrollToNext(`a20`)">
-                    <div><input id="a19-1" type="radio" name="a19"><label for="a19-1">Dass sie ehrlich und zuverlässig sind</label> <!--Misako--></div>
-                    <div id = "a19"><input id="a19-2" type="radio" name="a19"><label for="a19-2">Dass sie mutig sind, auch wenn es schwer wird</label> <!--Morro--></div>
-                    <div><input id="a19-3" type="radio" name="a19"><label for="a19-3">Dass sie mit mir lachen können, egal was passiert</label> <!--Dareth--></div>
-                    <div><input id="a19-4" type="radio" name="a19"><label for="a19-4">Dass wir uns gegenseitig ergänzen</label> <!--Pixal--></div>
-                    <div><input id="a19-5" type="radio" name="a19"><label for="a19-5">Dass wir gemeinsam an einem Strang ziehen</label> <!--Lloyd--></div>
+                    <!--Misako-->
+                    <label class = "quiz-option"><input type="radio" id = "a19-1" name = "a19">Dass sie ehrlich und zuverlässig sind</label>
+                    <!--Morro-->
+                    <label class = "quiz-option" id = "a19"><input type="radio" id = "a19-2" name = "a19">Dass sie mutig sind, auch wenn es schwer wird</label>
+                    <!--Dareth-->
+                    <label class = "quiz-option"><input type="radio" id = "a19-3" name = "a19">Dass sie mit mir lachen können, egal was passiert</label>
+                    <!--Pixal-->
+                    <label class = "quiz-option"><input type="radio" id = "a19-4" name = "a19">Dass wir uns gegenseitig ergänzen</label>
+                    <!--Lloyd-->
+                    <label class = "quiz-option"><input type="radio" id = "a19-5" name = "a19">Dass wir gemeinsam an einem Strang ziehen</label>
                 </div>
             </div>
 
             <div class="question q20">
                 <h1 class="question-text">Was würdest du tun, wenn du eine große Verantwortung bekommst?</h1>
                 <div class="answers a20" onclick = "scrollToNext(`result`)">
-                    <div><input id="a20-1" type="radio" name="a20"><label for="a20-1">Ich nehme sie ernst und bereite mich gut vor</label> <!--Wu--></div>
-                    <div id = "a20"><input id="a20-2" type="radio" name="a20"><label for="a20-2">Ich habe Respekt, aber ich vertraue auf mein Team</label> <!--Nya--></div>
-                    <div><input id="a20-3" type="radio" name="a20"><label for="a20-3">Ich nutze jede Gelegenheit, um zu zeigen, was ich kann</label> <!--Kai--></div>
-                    <div><input id="a20-4" type="radio" name="a20"><label for="a20-4">Ich plane sorgfältig und überlege jeden Schritt</label> <!--Zane--></div>
-                    <div><input id="a20-5" type="radio" name="a20"><label for="a20-5">Ich vertraue darauf, dass ich mit Herausforderungen wachse</label> <!--Nadakhan--></div>
+                    <!--Wu-->
+                    <label class = "quiz-option"><input type="radio" id = "a20-1" name = "a20">Ich nehme sie ernst und bereite mich gut vor</label>
+                    <!--Nya-->
+                    <label class = "quiz-option" id = "a20"><input type="radio" id = "a20-2" name = "a20">Ich habe Respekt, aber ich vertraue auf mein Team</label>
+                    <!--Kai-->
+                    <label class = "quiz-option"><input type="radio" id = "a20-3" name = "a20">Ich nutze jede Gelegenheit, um zu zeigen, was ich kann</label>
+                    <!--Zane-->
+                    <label class = "quiz-option"><input type="radio" id = "a20-4" name = "a20">Ich plane sorgfältig und überlege jeden Schritt</label>
+                    <!--Nadakhan-->
+                    <label class = "quiz-option"><input type="radio" id = "a20-5" name = "a20">Ich vertraue darauf, dass ich mit Herausforderungen wachse</label>
                 </div>
             </div>
         </section>
+        
 
         <section class = "result">
             <div id = "result">
