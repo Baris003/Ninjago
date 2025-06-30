@@ -2,5 +2,4 @@
 function scrollToNext(sectionId) {
     section = document.getElementById(sectionId);
     section.scrollIntoView({ behavior: 'smooth', block: 'center'});
-
 }

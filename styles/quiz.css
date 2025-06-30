@@ -134,7 +134,23 @@ main {
 
 
 
+/* Submit button styling */
 
+#submit-btn {
+    font-size: clamp(1rem, 6vw, 2rem);
+    font-family: "Poppins";
+    padding: 1rem;
+    width: 15vw; 
+    border: none;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#submit-btn:hover {
+    background-color: rgba(146, 68, 68, 0.95);
+}
 
 
 
