@@ -140,17 +140,24 @@ main {
     font-size: clamp(1rem, 6vw, 2rem);
     font-family: "Poppins";
     padding: 1rem;
-    width: 15vw; 
+    width: clamp(8rem, 15rem, 15vw); 
     border: none;
     border-radius: 15px;
-    background-color: red;
+    background-color: rgb(216, 25, 25);
     color: white;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 #submit-btn:hover {
-    background-color: rgba(146, 68, 68, 0.95);
+    transform: scale(1.05);
+    background-color: rgb(153, 18, 18);
 }
+
+#submit-btn:active {
+    transform: scale(0.98);
+    background-color: rgb(120, 12, 12);
+}
+
 
 
 
@@ -171,4 +178,13 @@ main {
     .hero img {
         margin: 20vh auto 0 auto;
     }
+}
+
+
+/* responsive submit btn */
+@media (hover: hover) and (pointer: fine) {
+  #submit-btn:hover {
+    transform: scale(1.05);
+    background-color: rgb(153, 18, 18);
+  }
 }
