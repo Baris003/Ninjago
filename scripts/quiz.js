@@ -29,29 +29,30 @@ let characterScores = {
 
 
 document.getElementById('submit-btn').onclick = function() {
+    document.getElementById('hidden-after-result').style.display = 'none';
+
     const answers = document.querySelectorAll('input[type="radio"]:checked')
-    //linking chosen inputs to character names
+
     for (let i = 0; i < answers.length; i++) {
-        let character = answers[i].dataset.character; 
-        //adding points to characters
-        if (character in characterScores) {
+        //linking each id to a character name
+        let character = answers[i].dataset.character;
+        //adding points to corresponding character
+        if(character in characterScores) {
             characterScores[character]++;
         }
     }
-
-    //comparing scores
-    let maxCharacter = null;
+    
+    //comparing characters
     let maxScore = -1;
+    let topCharacter = null;
 
-    for (const [character, score] of Object.entries(characterScores)) {
-        if (score > maxScore) {
-            maxCharacter = character;
-            maxScore = score;
+    for (let character in characterScores) {
+        if (characterScores[character] > maxScore) {
+            maxScore = characterScores[character];
+            topCharacter = character;
         }
     }
-    console.log(maxCharacter)
-
-    //if there is more than one maximum
-
+    
+    //handling multiple top characters
 
 }
