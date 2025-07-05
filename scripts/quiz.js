@@ -44,15 +44,27 @@ document.getElementById('submit-btn').onclick = function() {
     
     //comparing characters
     let maxScore = -1;
-    let topCharacter = null;
+    let topCharacters = [];
 
     for (let character in characterScores) {
         if (characterScores[character] > maxScore) {
             maxScore = characterScores[character];
-            topCharacter = character;
+            topCharacters = [character];
+        }
+        else if (characterScores[character] === maxScore) {
+            topCharacters.push(character)
+        }
+    }
+    if (topCharacters.length === 1) {
+        console.log('You are most like: ' + topCharacters[0])
+    }
+    else {
+        let percent = (1/topCharacters.length) * 100;
+        console.log('It`s a tie! You are');
+        for (character of topCharacters) {
+            console.log(`${percent}% like ${character}`)
         }
     }
     
-    //handling multiple top characters
-
+     
 }
