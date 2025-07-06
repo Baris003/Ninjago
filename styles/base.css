@@ -322,7 +322,27 @@ button:active {
 
 
 /*responsive navigation bar*/
-@media(max-width: 900px) {
+@media(pointer: coarse) {
+    
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .open-sidebar {
+        display: block;
+        margin-right: 1.5rem;
+    }
+
+    .sidebar {
+        font-size: 1.25rem;
+    }
+
+    .logo {
+        width: 10rem;
+    }
+}
+
+@media(max-width: 840px) {
     
     .hide-on-mobile {
         display: none;

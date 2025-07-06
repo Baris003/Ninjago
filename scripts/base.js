@@ -15,9 +15,7 @@ function closeSidebar() {
 function toggleSidebarSection(section, action) {
     const page1Elements = document.getElementsByClassName('sidebar-page1');
     const page2Elements = document.getElementsByClassName(`sidebar-${section}-page2`);
-    console.log(page1Elements)
-    console.log(page2Elements)
-    console.log(section, action)
+
 
     if (action === 'open') {
         for (let i = 0; i < page1Elements.length; i++) {
