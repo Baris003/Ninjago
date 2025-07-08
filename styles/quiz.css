@@ -162,6 +162,31 @@ main {
 
 
 
+/* ========== Result Styling ==========*/
+
+/* One winner only */
+#result-container {
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5vh;
+    font-family: "Poppins";
+    color: rgb(231, 220, 220);
+    width: 80vw;
+}
+
+#result-container img {
+    width: 100px;
+}
+
+#result-container p {
+    font-size: clamp(0.8rem, 4vw, 2rem)
+}
+
 
 
 

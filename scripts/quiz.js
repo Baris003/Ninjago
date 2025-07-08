@@ -78,9 +78,9 @@ document.getElementById('submit-btn').onclick = function() {
         const result = document.getElementById('result-container');
         result.innerHTML
         = `
+        <img src = "../images/${topCharacters[0]}_result.png">
         <h1>Du bist ${topCharacters[0]}!</h1>
         <p>${characterDescription[topCharacters[0]]}</p>
-        <img src = "../images/${topCharacters[0]}_result.png">
         `
 
     }
