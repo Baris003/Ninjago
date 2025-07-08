@@ -87,10 +87,8 @@ document.getElementById('submit-btn').onclick = function() {
     else {
         let x = (1/topCharacters.length) * 100;
         let percent = Math.round(x * 10) / 10;
-        console.log('It`s a tie! You are');
-        for (character of topCharacters) {
-            console.log(`${percent}% like ${character}`)
-        }
+        
+        
     }
     
      

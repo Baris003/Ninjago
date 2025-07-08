@@ -180,13 +180,16 @@ main {
 }
 
 #result-container img {
-    width: 100px;
+    width: 130px;
 }
 
 #result-container p {
     font-size: clamp(0.8rem, 4vw, 2rem)
 }
 
+#result-container h1 {
+    font-size: clamp(2rem, 6vw, 2.5rem)
+}
 
 
 
