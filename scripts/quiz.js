@@ -78,18 +78,34 @@ document.getElementById('submit-btn').onclick = function() {
         const result = document.getElementById('result-container');
         result.innerHTML
         = `
-        <img src = "../images/${topCharacters[0]}_result.png">
+        <img id = "img" src = "../images/${topCharacters[0]}_result.png">
         <h1>Du bist ${topCharacters[0]}!</h1>
         <p>${characterDescription[topCharacters[0]]}</p>
         `
-
+        document.getElementById('img').scrollIntoView({block: 'end' });
     }
     else {
         let x = (1/topCharacters.length) * 100;
         let percent = Math.round(x * 10) / 10;
         
+        //adding html if theres multiple winners
+        const result = document.getElementById('result-container');
+        //adding class for specific css styles
+        result.id = 'result-multiple-characters'
         
+        result.innerHTML = '<h1 id = "result-h1">Du bist zu...</h1>'
+        for (let i = 0; i < topCharacters.length; i++) {
+            let resultHTML = `
+                <div class = "character">
+                    <h2>${percent}% wie ${topCharacters[i]}!</h2>
+                    <img src = "../images/${topCharacters[i]}_result.png">
+                    <p>${characterDescription[topCharacters[i]]}</p>
+                </div>
+                `
+
+            result.innerHTML += resultHTML;
+        }
     }
-    
+    document.getElementById('result-h1').scrollIntoView({block: 'end' });
      
 }
